@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import User from '../models/user.model.js';
 
-const ptorectRoute = async (req, res, next) => {
+const protectRoute = async (req, res, next) => {
 	try {
 		const token = req.cookies.jwt;
 
@@ -30,4 +30,4 @@ const ptorectRoute = async (req, res, next) => {
 	}
 };
 
-export default ptorectRoute;
+export default protectRoute;
